@@ -1,0 +1,15 @@
+
+$primary:     #868484; //#ff005e;
+$secondary:   #eee;
+$accent:     #ffffff;
+
+$input-group-addon-bg: $secondary !default;
+$input-group-addon-border-color:$secondary !default;
+$form-check-input-border: 1px solid $primary !default;
+
+@import "../../node_modules/bootstrap/scss/bootstrap"; 
+$input-focus-color: rgba($primary, 50%);
+$input-bg: $primary;
+$input-btn-focus-color: rgba($primary, $input-btn-focus-color-opacity);
+
+$input-focus-box-shadow: $primary;

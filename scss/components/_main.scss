@@ -1,0 +1,338 @@
+@use '../vendor/boostrap' as *;
+@use '../theme/apptheme'  as *; 
+
+
+
+.main--layout{
+       
+        .grid--layout{
+            overflow: auto;
+            @include media-breakpoint-up(lg){
+                overflow: hidden;
+            }
+            
+            .row{
+              
+                .row-left{
+                    height: auto;
+                    .news--list{
+                        padding-top: 2.9rem;
+                        width: 95%;
+                        margin: 0 auto;
+
+                        @include media-breakpoint-up(lg){
+                            padding-right: 1.5rem;
+                            margin: 0;
+                            width: auto;
+                        }
+            
+                        .row-col{
+                           
+                            .card{
+                                background-color: transparent!important;
+                                border: none;
+                                text-decoration: none;
+                                color: $gray-800;
+            
+            
+            
+                                &:hover{
+                                    opacity: 0.7;
+                                }
+
+                             .row{
+
+                                display: flex;
+                                align-items: flex-start;
+            
+                                .card-body {
+                                    padding-left: 0!important;
+                                    padding-top: 0!important;
+
+                                    @include media-breakpoint-up(lg){
+                                        padding-left: 0!important;
+
+                                    }
+
+                                    a{
+                                        text-decoration: none;
+                                        color: var(--primary-color);
+
+                                        .card-title{
+                                            font-weight: bold;
+                                            font-size: 1.5rem;
+                                            font-family: 'Outfit', sans-serif;
+                                            
+                                        }
+                                    }
+                                    
+
+                                    p{
+                                        margin-bottom: 0.6rem;
+                                    }
+
+                                    
+                                }
+                                
+                                .col-min-img{
+                                    width: 25%;
+                                    height: auto;
+                                    background-color: #ced4da4d;
+                                    border-radius: 15px;
+
+                                    @include media-breakpoint-up(lg){
+                                        width: 20%;
+                                        height: 145px;
+                                    }
+
+                                    a{
+                                        display: block;
+                                        width: 100%;
+                                        height: 100%;
+                                        
+                                        img{
+                                          
+                                            height: auto;
+                                            border-radius: 15px;
+                                        }
+                                    }
+                                    
+
+                                    .img-placeholder{
+                                       
+                                    }
+                                }
+                                .card-extra{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    ul{
+                                        list-style: none;
+                                        display: flex;
+                                        align-items: center;
+                                        padding-left: 0!important;
+
+                                        li{
+                                            span{
+                                                font-size: 0.9rem;
+                                                color: $gray-600;
+                                            }
+                                            
+                                            a{
+                                                font-size: 0.9rem;
+                                                color: $gray-600;
+                                            }
+                                        }
+                                    }
+                                }
+
+                              }
+                            }
+                        }
+                    }
+
+                }
+
+                .row-right{
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    right: 0;
+                    border-left: none;
+
+                    @include media-breakpoint-up(lg){
+                        width: 30%;
+                        height: 100vh;
+                        position: fixed;
+                        right: 0;
+                        border-left: 1px solid #eee;
+                    }
+                    
+                    .container-fluid{
+                        position: relative;
+                        height: 100%;
+                        padding-top: 2.9rem;
+
+                        .news-create-btn{
+                            width: 50%;
+                            padding-top: 2rem;
+
+                            a{
+                                display: flex;
+                                background-color: rgba(213, 219, 238, 0.548) !important;
+                                padding: 0.5rem;
+                                padding-left: 1.2rem;
+                                border-radius: 15px;
+                                text-decoration: none;
+                                color: rgb(93, 125, 223);
+                                cursor: pointer;
+                            }
+                        }
+                      
+
+                        .row{
+
+                            ul{
+                                list-style: none;
+                                padding-top: 0.9rem;
+                                display: flex;
+                                flex-flow: wrap;
+
+                                li{
+                                    margin-right: 0.8rem;
+                                    margin-bottom: 0.7rem;
+
+                                    .badge{
+                                        background-color: #eee!important;
+                                        padding: 0.8rem;
+                                        font-size: 0.8rem;
+                                        color: $gray-800 !important;
+                                        font-weight: normal !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        .footer{
+                            width: 100%;
+
+                            @include media-breakpoint-up(lg){
+                                position: absolute;
+                                width: 100%;
+                                bottom: 15% !important;
+                            }
+
+                            
+
+                            ul{
+                                list-style: none;
+                                padding-left: 0 !important;
+                                display: flex;
+                                align-items: center;
+
+                                li{
+                                    margin-right: 0.6rem;
+                                    span{
+                                          font-size: 0.95rem;
+                                          color: $gray-700;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+       .view--news{
+          
+        .container{
+            width: 95%;
+            margin: 0 auto;
+            padding-top: 2rem;
+            
+            @include media-breakpoint-up(lg){
+                padding-top: 3rem;
+                width: 60%;
+            }
+
+            .row_col{
+
+                .card{
+
+                    .card-body{
+
+                        .image-container{
+                            margin-top: 0.3rem;
+                            width: 100%;
+                            height: 400px;
+                            overflow: hidden;
+                            background-color: #eee;
+        
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        .cd-extra{
+                            display: block;
+
+                            @include media-breakpoint-up(lg){
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+
+                            ul{
+                                list-style: none;
+                                display: block;
+                                padding-left: 0!important;
+
+                                @include media-breakpoint-up(lg){
+                                    display: flex;
+                                    align-items: center;
+                                }
+
+                                li{
+                                    span{
+                                        font-size: 0.95rem;
+                                        color: $gray-600;
+                                    }
+                                    
+                                    a{
+                                        font-size: 0.95rem;
+                                        color: $gray-600;
+                                    }
+                                }
+                            }
+                        }
+
+                        .card-text{
+
+                            font-size: 1.1rem;
+                        }
+                    }
+
+                }
+
+            }
+
+            .comment-section{
+
+                .card-default{
+                    border: none !important;
+
+                    .card-body{
+
+                        .comment__avatar_wrapper{
+
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            margin-right: 0.5rem;
+                            overflow: hidden;
+                            background-color: #eee;
+
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+       }
+    }
+
+.ph-picture {
+ background-color: #ced4da4d !important;
+}
+
+.ph-row div{
+    background-color: #ced4da4d !important;
+}

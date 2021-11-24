@@ -1,0 +1,25 @@
+@use '../vendor/boostrap' as *;
+@use '../theme/apptheme'  as *; 
+
+
+.display-4{
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: bold !important;
+    width: auto;
+    text-transform: uppercase;
+
+}
+
+.display-3{
+    font-size: 1.7rem;
+    color: var(--primary-color);
+    font-weight: 500 !important;
+    line-height: 4rem;
+    font-family: 'Outfit', sans-serif;
+
+    @include media-breakpoint-up(lg){
+        font-size: 2.9rem;
+    }
+}
+

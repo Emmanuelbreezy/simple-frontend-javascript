@@ -1,0 +1,27 @@
+@use '../vendor/boostrap' as *;
+
+
+:root{
+    --body-bg-color: #fff;  //#FAF5EE;
+    --primary-color: #000;   //#ff005e;
+    --secondary-color:#a5057d;
+    --accent-color:#fff;
+    --inactive-anchor-color:#d69cc8;
+    --text-color: rgb(255, 254, 254);
+}
+
+body{
+    width: 100%;
+    background-color: var(--body-bg-color);
+    padding: 0;
+    margin: 0;
+}
+
+.border-span {
+    display: block;
+    border-bottom: 2px solid var(--primary-color);
+    margin-top: 0.2rem;
+    height:2px;
+    width:200px;
+}
+

@@ -1,0 +1,29 @@
+@use '../vendor/boostrap' as *;
+@use '../theme/apptheme'  as *; 
+
+
+.menu-bar{
+    z-index: 1 !important;
+    background-color: $white;
+    .container{
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        
+        .navbar-brand{
+            font-size: 1.5rem;
+            font-weight: bolder;
+            color: var(--primary-color);
+        }
+
+        .navbar-collapse{
+            width: 100%;
+          
+            ul{
+                padding-left: 0;
+                margin: 0;
+                list-style: none;
+            }
+        }
+    }
+
+}

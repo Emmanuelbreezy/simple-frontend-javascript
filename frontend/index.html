@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A Simple News Application</title>
+    <link rel="stylesheet" href="/static/css/custom-boostrap.css" />
+    <link rel="stylesheet" href="/static/css/fontawesome.css" />
+    <link rel="stylesheet" href="/static/css/placeholder-loading.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800&family=Righteous&family=Vollkorn&display=swap" rel="stylesheet">
+</head>
+<body>
+ <header style="margin-bottom: 4.0rem;">
+   <!--------NAVIGTION BAR------->
+   <nav class="navbar navbar-expand-lg fixed-top menu-bar shadow-sm">
+    <div class="container">
+      <a href="/" class="navbar-brand" data-link>Metro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+        <ul class=" mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+          </li>
+        </ul>
+        <ul class="navbar-nav  mb-2 mb-lg-0  ">
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+ </header>
+
+ <main class="main--layout">
+
+       <div id="app-root"></div>
+<!-- 
+       <div class="col-12 mb-4"><div class="card">
+        <div class="row g-0">
+          <div class="col-md-3 col-min-img" >
+              <a href="/news/${res.id}" data-link>
+              <img src="${res.avatar}" style="background-color: #eee;" class="card-img-top" alt="..." />    
+              </a>
+          </div>
+      <div class="col-md-8 ms-4">
+      <div class="card-body">
+          <a href="/news/${res.id}" data-link><h5 class="card-title">${res.title}</h5></a>
+          <p class="card-text">Website url: <a href="${res.url}" style="color:blue; text-decoration:underline;">${res.url}</a></p>
+          <div class="card-extra">
+          <ul ><li class=""><span><b>Author:</b> ${res.author}</span>
+          </li></ul><ul><li><a href="/edit/${res.id}" data-link><i class="fas fa-pen"></i></a></li><li class="ms-4"><a class="trigger__del_action" style="cursor:pointer" data-id="${res.id}">
+          <i class="fas fa-trash"></i></a></li></ul></div>
+      </div>
+      </div></div></div></div> -->
+
+  
+ </main>
+
+ <script type="module" src="/static/js/app.js" type="text/javascript"></script>
+ <!-- <script src="static/js/listing.js" type="text/javascript"></script> -->
+</body>
+</html>
