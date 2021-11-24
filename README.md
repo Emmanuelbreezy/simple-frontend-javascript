@@ -25,7 +25,9 @@ install all packages
 npm install
 ```
 folder structure (views are the pages e.g Homepage,NewsDetail etc)
+
 ![fsc](https://user-images.githubusercontent.com/35114137/143219878-a3f63997-b083-4d15-afa7-47cb90ad1361.PNG)
+
 
 run the development server:
 
